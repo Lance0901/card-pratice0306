@@ -10,6 +10,7 @@ container>row>column>card
  margin-left: auto;
  margin-right: auto;
  width: 100%;
+ margin-top: 30px;
 }
 /*
 在container設定RWD的尺寸，因為container是最外圍的容器
@@ -38,25 +39,29 @@ RWD由大尺寸做到小尺寸(較好修正)
   margin-right: -15px;
 }
 .column {
-  background-size: cover;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 .card {
-  padding-top: 100%;
+  padding-top: 50%;
   position: relative;
-  padding-bottom: 20px;
-  margin: 16px 16px;
+  padding-bottom: 0px;
+  margin: 30px 15px;
  }
 .w-25 {
-  width: 25%;
+  width: 22%;
 }
 .icon-vector {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  margin-bottom: -100px;
+  margin-top: -25px;
+  margin-right: -10px;
+  top: 10px;
+  right: 10px;
+  /* margin-bottom: -50px; */
 }
 .card-tag {
   background-color: #FFEC3D;
@@ -69,12 +74,9 @@ RWD由大尺寸做到小尺寸(較好修正)
   width: 80px;
   height: 32px;
   align-items: flex-start;
-  margin: 8px 0px;
   position: static;
-  top: 4px;
-  left: 8px;
   text-align: center;
-  padding-top: 6px;
+  padding-top: 8px;
 }
 .sight {
   color: #FEFEFE;
@@ -87,9 +89,10 @@ RWD由大尺寸做到小尺寸(較好修正)
 .Loc-icon {
   display: flex;
   position: relative;
+  align-items: center;
 }
 .Loc-icon img{
-  
+  width: 8%;
 }
 .Location {
   font-family: Noto Sans CJK TC;
