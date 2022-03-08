@@ -7,10 +7,10 @@ card 常用結構會有4層，由外而內為
 container>row>column>card
 */
 .container {
- margin-left: auto;
- margin-right: auto;
- width: 100%;
- margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 30px;
 }
 /*
 在container設定RWD的尺寸，因為container是最外圍的容器
@@ -35,36 +35,36 @@ RWD由大尺寸做到小尺寸(較好修正)
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 .column {
-  background-size:cover;
+  margin: 15px 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.card {
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-}
-.card {
   padding-top: 50%;
   position: relative;
-  padding-bottom: 0px;
-  margin: 30px 15px;
- }
+
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-bottom: 2px;
+
+}
 .w-25 {
-  width: 22%;
+  width: 25%;
 }
 .icon-vector {
   position: absolute;
-  margin-top: -25px;
-  margin-right: -10px;
   top: 10px;
   right: 10px;
-  /* margin-bottom: -50px; */
 }
 .card-tag {
-  background-color: #FFEC3D;
+  background-color: #ffec3d;
   border-radius: 20px;
   font-family: Noto Sans CJK TC;
   font-style: normal;
@@ -76,22 +76,30 @@ RWD由大尺寸做到小尺寸(較好修正)
   align-items: flex-start;
   position: static;
   text-align: center;
-  padding-top: 8px;
+  box-sizing: border-box;
+  margin-left: 8px;
+  padding-top: 4px;
+  padding-left: 2px;
 }
 .sight {
-  color: #FEFEFE;
+  color: #fefefe;
   font-family: Noto Sans CJK TC;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
+  margin-left: 8px;
+  padding-top: 8px;
 }
 .Loc-icon {
   display: flex;
   position: relative;
   align-items: center;
+  margin-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
-.Loc-icon img{
+.Loc-icon img {
   width: 8%;
 }
 .Location {
@@ -100,6 +108,5 @@ RWD由大尺寸做到小尺寸(較好修正)
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-   color: #FFFFFF;
-
+  color: #ffffff;
 }
